@@ -1,0 +1,245 @@
+/* CSS DO ROLAMENTO DA PAGINA */
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ffffff6a;
+    border-radius: 7px;
+    border: 3px solid #f0f0f00e;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff6a #000000;
+  }
+  
+
+/* CSS GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.cabecalho{
+    max-width: 1280px;
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+h2.titulo , .span-titulo{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.span-titulo{
+    color: #00ff00 ;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CSS CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(177, 175, 175);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header a:hover{
+    color: white;
+    transition: ease-in-out 0.4s;
+    font-size: 18px;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 60px;
+}
+
+header .btn-contato button{
+    padding: 5% 40px;
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0 0 10px cadetblue;
+    transition: 0.3s ease-in-out ;
+}
+
+/* CSS INICIO */
+
+main > .inicio{
+    padding-top: 3%;
+    color: white;
+}
+
+.titulo-slogan{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.frase-slogan{
+    width: 80%;
+    font-size: medium;
+    padding-top: 15px;
+}
+
+main > .inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-inicio{
+    padding-right: 20%;
+    overflow: hidden;
+}
+
+.titulo-slogan, .frase-slogan{
+    padding-left: 15%;
+}
+
+main .btn-inicio button{
+    padding: 1% 13px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main .btn-inicio button:hover{
+    box-shadow: 0px 0px 10px cadetblue;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-inicio{
+    padding: 3% 14%;
+}
+
+.inicio .img-inicio img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 25px;
+    }
+}
+
+/* CSS ESPECIALIDADES */
+
+main .especialidades{
+    padding: 4% 40px;
+}
+
+.especialidades .titulo{
+    margin-bottom: 4%;
+    margin-top: 7%;
+}
+
+.especialidades .website-box{
+    color: white;
+    margin: 0px 25%;
+    border: solid 2px none;
+    padding: 0px 2% 2%;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.especialidades .website-box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px white;
+    cursor: pointer;
+}
+
+.especialidades .website-box img{
+    padding-top: 4%;
+    
+}
+
+.especialidades .website-box .h3-website{
+    font-weight: 700;
+    font-size: 28px;
+    padding: 20px 0;
+    
+}
+
+.especialidades .website-box p{
+    width: 95%;
+}
+
+/* CSS SOBRE */
+
+.sobre {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+p{
+    color: white;
+}
+
+.sobre img{
+    margin: 0 5%;
+    border-radius: 15px;
+}
+
+.sobre-informacao h2{
+    text-align: left;
+}
+
+.sobre-informacao p {
+    font-size: 21px;
+    padding: 5px 0;
+    margin: 25px 0;
+    width: 90%;
+}
+
+.sobre-informacao .icones-sobre{
+    border-radius: 0;
+    margin: 1%;
+}
