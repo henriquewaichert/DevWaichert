@@ -1,0 +1,783 @@
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    /* CSS RESPONSIVE MENU */
+
+    header .menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 7px;
+        right: 0;
+        background-color: #333;
+        width: 45%;
+        height:auto;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+
+    header .menu ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    header .menu ul li {
+        display: block;
+        padding: 7px 5%;
+    }
+
+    .aba-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-left: 100px;
+    }
+
+    .aba-menu .span-menu {
+        width: 17px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        margin: 2px 0; 
+    }
+
+    .menu li a{
+        font-weight: 100;
+        text-decoration: none;
+        display: flex;
+    }
+
+    header nav ul{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    header .menu.active {
+        display: flex;
+        position: fixed;
+        height: 35%;
+    }
+
+    .btn-contato{
+        display: none;
+    }
+
+
+     .close-menu {
+        display: block;
+        background-color: #ff4c4c;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        margin-left:  auto;
+        margin-right:  auto;
+        margin-top: 10px;
+        cursor: pointer;
+        width: 55px;
+    }
+
+
+    .trilho{
+        margin-left: 10px;
+        width: 40px;
+        height: 20px;
+        position: static;
+    }
+
+    .trilho .indicador{
+        top: 0;
+        position: relative;
+    }
+
+    header .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .subir-topo{
+        text-align: end;
+        position: fixed;
+        margin-left: 90%;
+        margin-top: 135%;
+    }
+    
+
+    /* CSS RESPONSIVE INICIO */
+
+    .inicio{
+        text-align: center;
+    }
+
+    .slogan .titulo-slogan{
+        font-size: 23px;
+        text-align: center;
+        margin: 0;
+        padding: 22px 0;
+    }
+
+    .inicio .slogan .frase-slogan{
+        width: 100%;
+        padding: 0 25px;
+        font-size: 15px;
+    }
+
+    .inicio .slogan .btn-inicio button{
+        margin: 20px 0;
+        font-size: 15px;
+        color: black;
+    }
+
+    .inicio .img-inicio{
+        display: none;
+    }
+
+    main .img_inicio{
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    main .inicio .slogan .textos-dinamicos {
+        font-size: 24px;
+        padding: 10px;
+        width: 90%; 
+        margin-left: 5%; 
+        text-shadow: 2px 2px 2px #00ff00;
+    }
+
+    .wrapper .textos-dinamicos li .span3{
+        font-size: 24px;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        min-width: 100%;
+    }
+
+    .wrapper .textos-dinamicos li::after {
+        border-left-width: 1px;
+    }
+
+    @keyframes typing-short3 {
+        5%,10%{
+            border-left: 2px solid #fa0000;
+        }
+        10%,40% {
+            opacity: 1;
+        }
+        40%, 60% {
+            left: 80%;
+            opacity: 1;
+        }
+        10%,60%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+    }
+
+    /* CSS RESPONSIVE ESPECIALIDADES */
+
+    .especialidades .titulo , .especialidades .span-titulo{
+        font-size: 23px;
+        padding: 35px 0;
+        
+    }
+
+    .especialidades .website-box{
+        width: 100%;
+        padding: 25px 0;
+        margin: 30px 0;
+    }
+
+    .especialidades .website-box .h3-website{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .especialidades .website-box img{
+        display: flex;
+        width: 15%;
+        margin: 0 42%;
+    }
+
+    .especialidades p{
+       padding: 0 20px;
+       margin: 13px;
+       font-size: 15px;
+       text-align: center;
+    }
+
+    /* CSS RESPONSIVE BENEFICIOS */
+
+    .beneficios .titulo , .beneficios .span-titulo{
+        font-size: 23px;
+        padding: 35px 0;
+    }
+
+    .beneficios .beneficios-box{
+        width: 100%;
+        padding: 25px 0;
+        margin: 30px 0;
+    }
+
+    .beneficios .beneficios-box .h2-beneficios{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .beneficios .flex-beneficio{
+        flex-direction: column;
+    }
+
+    .flex-beneficio .responsive-beneficio-mercado , .flex-beneficio .responsive-beneficio-cliente{
+        margin-top: 20px;
+        width: 155px;
+        
+    }
+
+    .flex-beneficio .responsive-beneficio-presenca , .flex-beneficio .responsive-beneficio-credi{
+        margin-top: 20px;
+        width: 190px;
+    }
+
+    .flex-beneficio .responsive-beneficio-marketing{
+        margin-top: 20px;
+        width: 180px;
+    }
+
+    .beneficios-box .flex-beneficio .p-beneficios{
+       padding: 0 20px;
+       margin-top: 5%;
+       text-align: center;
+       font-size: 16px;
+    }
+
+    /* CSS RESPONSIVE SOBRE */
+
+    .sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre img{
+        order: 1;
+        width: 55%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sobre-informacao .titulo , .sobre .span-titulo{
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .sobre-informacao .p-sobre{
+        padding: 0px 20px;
+        margin: 30px 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .sobre-informacao .icones{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sobre-informacao .icones-sobre{
+        width: 27px;
+    }
+
+    /* CSS RESPONSIVE PORTIFOLIO */
+
+    .portifolio .titulo , .portifolio .span-titulo{
+        font-size: 23px;
+    }
+
+    .portifolio-informacao .img-port{
+        width: 150px;
+        height: 220px;
+        margin: 15px;
+    }
+
+    .portifolio-informacao .img-port .overlay{
+        display: none;
+    }
+
+    .div-subtitulo{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 53px;
+    }
+
+    .sub-titulo{
+        display: inline-flex;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    /* CSS RESPONSIVE FORMULARIO */
+
+    .form{
+        flex-direction: column;
+    }
+
+    .formulario .titulo , .formulario .span-titulo{
+        font-size: 23px;
+    }
+
+    .form .bi-whatsapp{
+        font-size: 45px;
+    }
+
+    .formalurio-container input{
+        width: 220px;
+        height: 30px;
+        margin: 7px;
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    form .btn-form{
+        font-size: 13px;
+        width: auto;
+    }
+
+    /* CSS RESPONSIVE REUNIAO */
+
+    .calendly-inline-widget{
+        padding: 10%;
+    }
+
+    /* CSS RESPONSIVE FOOTER */
+
+    .logo-footer img{
+        width: 35%;
+    }
+
+    .images-footer{
+        width: 30%;
+    }
+
+    .line-footer p>img{
+        width: 2.5%;
+    }
+
+    .line-footer a{
+       font-size: 13px ; 
+    }
+
+    footer .copyright{
+        font-size: 10px;
+    }
+
+    .logo-footer img{
+        width: 35px;
+    }
+    
+    .logo-footer p {
+        font-size: 16px;
+        font-weight: 550;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    /* CSS RESPONSIVE MENU */
+
+    header {
+        padding: 40px 4%;
+        position: relative;
+        margin: 0;
+    }
+    
+    header > .cabecalho{
+        display: flex;
+        align-items: center;
+    }
+    
+    header .logo {
+        display: flex;
+        width: 200px;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    header .logo p {
+        top: 40%;
+        font-size: medium;
+    }
+    
+    header a{
+        color: rgb(177, 175, 175);
+        text-decoration: none;
+        font-size: 12px;
+    }
+    
+    header a:hover{
+        color: white;
+        transition: ease-in-out 0.4s;
+        font-size: 13.5px;
+    }
+    
+    header nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        padding-right: 33px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        text-align: start;
+        align-items: start;
+    }
+    
+    
+    header nav ul li{
+        display: inline-block;
+        padding: 0 40px;
+        width: 105%; 
+    }
+    
+    header .btn-contato button{
+        padding: 5% 20px;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0 1px;
+        margin-left: 1px;
+    }
+    
+    header .btn-contato button:hover{
+        box-shadow: 0 0 10px cadetblue;
+        transition: 0.3s ease-in-out ;
+    }
+    
+    .close-menu{
+        display: none;
+    }
+    
+    
+    .trilho{
+        width: 55px;
+        height: 17px;
+        background-color: white;
+        border-radius: 200px;
+        position: relative;
+        cursor: pointer;
+        transition: .5s;
+        margin-left: 70px;
+    }
+    
+    .trilho .indicador {
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top:1px;
+        transform: scale(.8);
+        transition: .5s;
+    }
+    
+    .esconder-bolinha .indicador {
+        display: none;
+    }
+
+    .subir-topo{
+        text-align: end;
+        position: fixed;
+        margin-left: 94%;
+        margin-top: 77%;
+    }
+    
+
+    /* CSS RESPONSIVE INICIO */
+
+    .inicio{
+        text-align: center;
+    }
+
+    .slogan .titulo-slogan{
+        font-size: 23px;
+        text-align: center;
+        margin: 0;
+        padding: 22px 0;
+    }
+
+    .inicio .slogan .frase-slogan{
+        width: 100%;
+        padding: 0 25px;
+        font-size: 15px;
+    }
+
+    .inicio .slogan .btn-inicio button{
+        margin: 20px 0;
+        font-size: 15px;
+        color: black;
+    }
+
+    .inicio .img-inicio{
+        display: none;
+    }
+
+    main .img_inicio{
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    main .inicio .slogan .textos-dinamicos {
+        font-size: 24px;
+        padding: 10px;
+        width: 90%; 
+        margin-left: 5%; 
+        text-shadow: 2px 2px 2px #00ff00;
+    }
+
+    .wrapper .textos-dinamicos li .span3{
+        font-size: 24px;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        min-width: 100%;
+    }
+
+    .wrapper .textos-dinamicos li::after {
+        border-left-width: 1px;
+    }
+
+    @keyframes typing-short3 {
+        5%,10%{
+            border-left: 2px solid #fa0000;
+        }
+        10%,40% {
+            opacity: 1;
+        }
+        40%, 60% {
+            left: 80%;
+            opacity: 1;
+        }
+        10%,60%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+    }
+
+    /* CSS RESPONSIVE ESPECIALIDADES */
+
+    .especialidades .titulo , .especialidades .span-titulo{
+        font-size: 23px;
+        padding: 35px 0;
+        
+    }
+
+    .especialidades .website-box{
+        width: 100%;
+        padding: 25px 0;
+        margin: 30px 0;
+    }
+
+    .especialidades .website-box .h3-website{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .especialidades .website-box img{
+        display: flex;
+        width: 15%;
+        margin: 0 42%;
+    }
+
+    .especialidades p{
+       padding: 0 20px;
+       margin: 13px;
+       font-size: 15px;
+       text-align: center;
+    }
+
+    /* CSS RESPONSIVE BENEFICIOS */
+
+    .beneficios .titulo , .beneficios .span-titulo{
+        font-size: 23px;
+        padding: 35px 0;
+    }
+
+    .beneficios .beneficios-box{
+        width: 100%;
+        padding: 25px 0;
+        margin: 30px 0;
+    }
+
+    .beneficios .beneficios-box .h2-beneficios{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .beneficios .flex-beneficio{
+        flex-direction: column;
+    }
+
+    .flex-beneficio .responsive-beneficio-mercado , .flex-beneficio .responsive-beneficio-cliente{
+        margin-top: 20px;
+        width: 155px;
+        
+    }
+
+    .flex-beneficio .responsive-beneficio-presenca , .flex-beneficio .responsive-beneficio-credi{
+        margin-top: 20px;
+        width: 190px;
+    }
+
+    .flex-beneficio .responsive-beneficio-marketing{
+        margin-top: 20px;
+        width: 180px;
+    }
+
+    .beneficios-box .flex-beneficio .p-beneficios{
+       padding: 0 20px;
+       margin-top: 5%;
+       text-align: center;
+       font-size: 16px;
+    }
+
+    /* CSS RESPONSIVE SOBRE */
+
+    .sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre img{
+        order: 1;
+        width: 55%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sobre-informacao .titulo , .sobre .span-titulo{
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .sobre-informacao .p-sobre{
+        padding: 0px 20px;
+        margin: 30px 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .sobre-informacao .icones{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sobre-informacao .icones-sobre{
+        width: 27px;
+    }
+
+    /* CSS RESPONSIVE PORTIFOLIO */
+
+    .portifolio .titulo , .portifolio .span-titulo{
+        font-size: 23px;
+    }
+
+    .portifolio-informacao .img-port{
+        width: 150px;
+        height: 220px;
+        margin: 15px;
+    }
+
+    .portifolio-informacao .img-port .overlay{
+        display: none;
+    }
+
+    .div-subtitulo{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 53px;
+    }
+
+    .sub-titulo{
+        display: inline-flex;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    /* CSS RESPONSIVE FORMULARIO */
+
+    .form{
+        flex-direction: column;
+    }
+
+    .formulario .titulo , .formulario .span-titulo{
+        font-size: 23px;
+    }
+
+    .form .bi-whatsapp{
+        font-size: 45px;
+    }
+
+    .formalurio-container input{
+        width: 220px;
+        height: 30px;
+        margin: 7px;
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    form .btn-form{
+        font-size: 13px;
+        width: auto;
+    }
+
+    /* CSS RESPONSIVE REUNIAO */
+
+    .calendly-inline-widget{
+        padding: 10%;
+    }
+
+    /* CSS RESPONSIVE FOOTER */
+
+    .logo-footer img{
+        width: 35%;
+    }
+
+    .images-footer{
+        width: 30%;
+    }
+
+    .line-footer p>img{
+        width: 2.5%;
+    }
+
+    .line-footer a{
+       font-size: 13px ; 
+    }
+
+    footer .copyright{
+        font-size: 10px;
+    }
+
+    .logo-footer img{
+        width: 35px;
+    }
+    
+    .logo-footer p {
+        font-size: 16px;
+        font-weight: 550;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1441px) {
+
+}
